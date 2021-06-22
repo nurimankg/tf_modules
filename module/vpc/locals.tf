@@ -1,8 +1,8 @@
 locals {
   common_tags = {
-    name = "main_vpc"
+    name = "Main_vpc"
     env     = var.env
-    project = "${var.env}-wordpress"
+    project = "${var.env}-infra"
     team    = "DevOps"
     owner   = "Nur"
   }
