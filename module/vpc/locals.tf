@@ -1,6 +1,6 @@
 locals {
   common_tags = {
-    name = "Main_vpc"
+    Name = "Main_vpc"
     env     = var.env
     project = "${var.env}-infra"
     team    = "DevOps"
