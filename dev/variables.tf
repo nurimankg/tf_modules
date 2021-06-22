@@ -1,5 +1,5 @@
 variable "env" {
-  type = sritng
+  type = string
 }
 
 variable "cidr" {
