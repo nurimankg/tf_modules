@@ -3,5 +3,10 @@
 resource "aws_vpc" "main_vpc" {
   cidr_block           = var.cidr
   enable_dns_hostnames = true
-  tags = local.common_tags
+  # tags = local.common_tags
+
+    tags = {
+    Terraform = "true"
+    Environment = "dev"
+  }
   }
