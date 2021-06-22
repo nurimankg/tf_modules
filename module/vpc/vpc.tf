@@ -7,6 +7,6 @@ resource "aws_vpc" "main_vpc" {
 
     tags = {
     Terraform = "true"
-    Environment = "dev"
+    Environment = var.env
   }
-  }
+}
