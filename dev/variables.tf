@@ -6,7 +6,7 @@ variable "cidr" {
   type = string
 }
 
-variable "cidr_blocks" {
+variable "cidr_list" {
   type = list(string)
 }
 
