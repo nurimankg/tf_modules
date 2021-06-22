@@ -1,6 +1,13 @@
 resource "aws_instance" "webserver" {
+  name          = "${var.env}-web"
   ami           = data.aws_ami.amazon_centos.image_id
   instance_type = var.instance_type
+  key_name        = aws_key_pair.terraform_server.key_name
+
+  tags = {
+    "Name" = "webserver"
+  }
+
   root_block_device {
     delete_on_termination = true
   }
@@ -49,4 +56,9 @@ data "aws_ami" "amazon_centos" {
     name   = "product-code"
     values = ["*aw0evgkw8e5c1q413zgy5pjce*"]
   }
+}
+
+resource "aws_key_pair" "terraform_server" {
+  key_name   = "${var.env}-terraform_server"
+  public_key = file("~/.ssh/id_rsa.pub")
 }

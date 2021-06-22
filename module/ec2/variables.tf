@@ -5,3 +5,7 @@ variable "env" {
 variable "instance_type" {
   type = string
 }
+
+variable "cidr" {
+  type = string
+}
