@@ -6,5 +6,7 @@ resource "aws_vpc" "main_vpc" {
 
   tags = {
     Name = "Main_vpc"
+    Tean = "devops"
+    Owner = "Nur"
   }
 }
