@@ -7,7 +7,6 @@ resource "aws_vpc" "main_vpc" {
 
     tags = {
     Name = "Main_vpc"
-    Terraform = "true"
     Environment = var.env
   }
 }
