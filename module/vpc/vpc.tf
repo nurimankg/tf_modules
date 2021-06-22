@@ -5,7 +5,7 @@ resource "aws_vpc" "main_vpc" {
   enable_dns_hostnames = true
   # tags = local.common_tags
 
-    tags = {
+  tags = {
     Name = "Main_vpc"
   }
 }
