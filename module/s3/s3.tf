@@ -1,4 +1,4 @@
   resource "aws_s3_bucket" "main" {
-    bucket = "${var.env}-backend-tfvars"
+    bucket = "backend-tfvars"
     acl = "private"
 }
