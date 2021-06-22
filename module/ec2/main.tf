@@ -5,8 +5,6 @@ resource "aws_instance" "webserver" {
     delete_on_termination = true
   }
 
-#   user_data = data.template_file.user_data.rendered
-
   vpc_security_group_ids = [aws_security_group.webserver_sg.id]
 }
 
