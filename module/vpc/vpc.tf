@@ -6,6 +6,7 @@ resource "aws_vpc" "main_vpc" {
   # tags = local.common_tags
 
     tags = {
+    Name = "Main_vpc"
     Terraform = "true"
     Environment = var.env
   }
