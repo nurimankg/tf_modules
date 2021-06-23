@@ -12,5 +12,4 @@ module "ec2_instance" {
   source = "github.com/nurimankg/tf_modules/module/ec2"
   env = var.env
   instance_type = var.instance_type
-  cidr = var.cidr_list
 }
