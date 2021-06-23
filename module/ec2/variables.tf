@@ -6,10 +6,6 @@ variable "instance_type" {
   type = string
 }
 
-variable "cidr" {
-  type = string
-}
-
 variable "cidr_list" {
   type = list(string)
 }
