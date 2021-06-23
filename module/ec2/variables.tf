@@ -7,5 +7,9 @@ variable "instance_type" {
 }
 
 variable "cidr_list" {
+  type = string
+}
+
+variable "cidr" {
   type = list(string)
 }
