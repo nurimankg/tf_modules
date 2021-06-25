@@ -1,4 +1,4 @@
-env  = "dev"
-cidr = "10.0.0.0/16"
+env           = "dev"
+cidr          = "10.0.0.0/16"
 instance_type = "t2.micro"
-cidr_list = ["0.0.0.0/24"]
+cidr_list     = ["0.0.0.0/24"]

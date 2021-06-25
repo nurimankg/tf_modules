@@ -5,13 +5,12 @@ module "s3_module" {
 
 module "vpc" {
   source = "github.com/nurimankg/tf_modules/module/vpc"
-  cidr = var.cidr
+  cidr   = var.cidr
 }
 
 module "ec2_instance" {
-  source = "github.com/nurimankg/tf_modules/module/ec2"
-  env = var.env
+  source        = "github.com/nurimankg/tf_modules/module/ec2"
+  env           = var.env
   instance_type = var.instance_type
-  cidr_list = var.cidr
-  cidr = var.cidr
+  cidr          = var.cidr
 }
