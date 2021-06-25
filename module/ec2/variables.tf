@@ -10,6 +10,6 @@ variable "cidr_list" {
   type = list(string)
 }
 
-variable "cidr" {
-  type = string
-}
+# variable "cidr" {
+#   type = string
+# }
