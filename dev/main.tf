@@ -6,6 +6,7 @@ module "s3_module" {
 module "vpc" {
   source = "github.com/nurimankg/tf_modules/module/vpc"
   cidr   = var.cidr
+  env   = var.env
 }
 
 module "ec2_instance" {
