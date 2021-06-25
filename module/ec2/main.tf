@@ -2,10 +2,11 @@ resource "aws_instance" "webserver" {
   ami           = data.aws_ami.amazon_centos.image_id
   instance_type = var.instance_type
   key_name        = aws_key_pair.terraform_server.key_name
-
-  tags = {
-    "Name" = "webserver"
-  }
+  tags = local.common_tags
+  
+  # tags = {
+  #   "Name" = "webserver"
+  # }
 
   root_block_device {
     delete_on_termination = true

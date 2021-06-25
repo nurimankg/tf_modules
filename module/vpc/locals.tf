@@ -1,11 +1,6 @@
 locals {
-  webserver_port = 80
-  protocol       = "tcp"
-}
-
-locals {
   common_tags = {
-    name    = "${var.env}-ec2-dev"
+    name    = "${var.env}-vpc-dev"
     env     = var.env
     project = "${var.env}-infra"
     team    = "DevOps"
