@@ -1,5 +1,4 @@
 resource "aws_instance" "webserver" {
-  # name          = "${var.env}-web"
   ami           = data.aws_ami.amazon_centos.image_id
   instance_type = var.instance_type
   key_name        = aws_key_pair.terraform_server.key_name
