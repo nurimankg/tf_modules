@@ -13,6 +13,6 @@ locals {
 }
 
 locals {
-  ssh_port = var.ssh
+  web_ssh_port = var.ssh_port
   protocol       = "tcp"
 }

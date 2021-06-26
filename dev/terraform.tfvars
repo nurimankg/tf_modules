@@ -4,4 +4,4 @@ instance_type = "t2.micro"
 cidr_list     = ["0.0.0.0/24"]
 ec2_name      = "testing-ec2-tags"
 http_port     = "8080"
-ssh           = "22"
+ssh_ssh_port  = "22"

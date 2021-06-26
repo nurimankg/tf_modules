@@ -22,7 +22,7 @@ variable "http_port" {
   type = number
 }
 
-variable "ssh" {
+variable "ssh_port" {
   type = number
 }
 
