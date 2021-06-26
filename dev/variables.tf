@@ -22,6 +22,6 @@ variable "http_port" {
   type = number
 }
 
-variable "vpc_name" {
-  type = string
-}
+# variable "vpc_name" {
+#   type = string
+# }
