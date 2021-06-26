@@ -1,5 +1,5 @@
 locals {
-  webserver_port = 80
+  webserver_port = 8080
   protocol       = "tcp"
 }
 
