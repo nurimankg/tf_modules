@@ -22,7 +22,7 @@ module "ec2_instance" {
 }
 
 module "web_sg" {
-  source = "value"
+  source = "github.com/nurimankg/tf_modules/module/Sg.tf"
   
   env           = var.env
   http_port     = var.http_port
