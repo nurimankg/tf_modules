@@ -26,6 +26,19 @@ variable "ssh_port" {
   type = number
 }
 
+variable "private_subnet_cidr" {
+  type = list(string)
+}
+
+variable "public_subnet_cidr" {
+  type = list(string)
+}
+
+variable "subnet_az" {
+  type = list(string)
+
+}
+
 
 # variable "vpc_name" {
 #   type = string
