@@ -11,6 +11,24 @@ module "vpc" {
   env      = var.env
 }
 
+module "subnets" {
+  source = "github.com/nurimankg/tf_modules/module/subnets.tf"
+
+  variable "private_subnet_cidr" {
+  type = list(string)
+}
+
+variable "public_subnet_cidr" {
+  type = list(string)
+}
+
+variable "subnet_az" {
+  type = list(string)
+
+}
+}
+
+
 module "ec2_instance" {
   source        = "github.com/nurimankg/tf_modules/module/ec2"
   
@@ -21,3 +39,4 @@ module "ec2_instance" {
   http_port     = var.http_port
   ssh_port      = var.ssh_port
 }
+
