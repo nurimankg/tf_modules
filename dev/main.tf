@@ -9,7 +9,6 @@ module "vpc" {
   
   cidr     = var.cidr
   env      = var.env
-  # vpc_name = var.vpc_name
 }
 
 module "ec2_instance" {
