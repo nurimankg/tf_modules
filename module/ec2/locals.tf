@@ -8,7 +8,7 @@ locals {
     Name    = "${var.env}-ec2-dev"
     env     = var.env
     project = "${var.env}-infra"
-    team    = "DevOps"
+    team    = "DevOps-01"
     owner   = "Nur"
   }
 }
