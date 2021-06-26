@@ -9,10 +9,6 @@ locals {
 
 locals {
   webserver_port = var.http_port
-  protocol       = "tcp"
-}
-
-locals {
   web_ssh_port = var.ssh_port
   protocol       = "tcp"
 }
