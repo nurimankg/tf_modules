@@ -17,6 +17,10 @@ variable "ec2_name" {
 variable "http_port" {
   type = number
 }
+
+variable "ssh_port" {
+  type = number
+}
 # variable "cidr" {
 #   type = string
 # }

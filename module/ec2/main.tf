@@ -24,6 +24,14 @@ resource "aws_security_group" "webserver_sg" {
     cidr_blocks = var.cidr_list
   }
 
+    ingress {
+    from_port   = local.ssh_port
+    to_port     = local.ssh_port
+    protocol    = local.protocol
+    cidr_blocks = var.cidr
+  }
+
+
   egress {
     from_port   = 0
     to_port     = 0

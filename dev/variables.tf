@@ -22,6 +22,9 @@ variable "http_port" {
   type = number
 }
 
+variable "ssh" {
+  type = number
+}
 
 
 # variable "vpc_name" {
