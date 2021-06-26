@@ -15,5 +15,9 @@ variable "instance_type" {
 }
 
 variable "ec2_name" {
-  
+  type = string
+}
+
+variable "http_port" {
+  type = number
 }

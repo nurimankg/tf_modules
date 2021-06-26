@@ -1,5 +1,5 @@
 locals {
-  webserver_port = 8080
+  webserver_port = var.http_port
   protocol       = "tcp"
 }
 
