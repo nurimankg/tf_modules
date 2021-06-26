@@ -18,14 +18,13 @@ module "ec2_instance" {
   env           = var.env
   instance_type = var.instance_type
   ec2_name      = var.ec2_name
-  cidr_list     = var.cidr_list
   
 }
 
 module "web_sg" {
   source = "github.com/nurimankg/tf_modules/module/Sg.tf"
   
-  env                = var.env
-  webserver_port     = var.webserver_port
-  cidr_list          = var.cidr_list
+  env           = var.env
+  webserver_port     = var.http_port
+  cidr_list     = var.cidr_list
 }

@@ -18,9 +18,11 @@ variable "ec2_name" {
   type = string
 }
 
-variable "webserver_port" {
-  type = number 
+variable "http_port" {
+  type = number
 }
+
+
 
 # variable "vpc_name" {
 #   type = string
