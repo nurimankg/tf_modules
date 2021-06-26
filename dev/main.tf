@@ -20,5 +20,5 @@ module "ec2_instance" {
   ec2_name      = var.ec2_name
   cidr_list     = var.cidr_list
   http_port     = var.http_port
-  ssh_port      = var.ssh
+  ssh_port      = var.ssh_port
 }
