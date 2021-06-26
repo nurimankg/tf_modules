@@ -11,7 +11,7 @@ variable "cidr_list" {
 }
 
 variable "ec2_name" {
-  
+  type = string
 }
 # variable "cidr" {
 #   type = string
