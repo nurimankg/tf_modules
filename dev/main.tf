@@ -25,6 +25,6 @@ module "web_sg" {
   source = "github.com/nurimankg/tf_modules/module/Sg.tf"
   
   env           = var.env
-  http     = var.http_port
+  http_port     = var.webserver_port
   cidr_list     = var.cidr_list
 }

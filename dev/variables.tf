@@ -22,8 +22,8 @@ variable "http_port" {
   type = number
 }
 
-variable "http" {
-  type = number
+variable "webserver_port" {
+  type = number 
 }
 
 # variable "vpc_name" {
