@@ -13,6 +13,10 @@ variable "cidr_list" {
 variable "ec2_name" {
   type = string
 }
+
+variable "http_port" {
+  type = number
+}
 # variable "cidr" {
 #   type = string
 # }

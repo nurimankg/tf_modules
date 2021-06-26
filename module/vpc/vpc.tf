@@ -5,9 +5,11 @@ resource "aws_vpc" "main_vpc" {
   enable_dns_hostnames = true
   tags = local.common_tags
 
-#   tags = {
-#     Name = "Main_vpc"
-#     Tean = "devops"
-#     Owner = "Nur"
-#   }
+  tags            = merge(
+     local.common_tags,
+     {
+       Name = var.ec2_name
+     }
+  )
 }
+
