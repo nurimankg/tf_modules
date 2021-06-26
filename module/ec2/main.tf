@@ -1,18 +1,17 @@
 resource "aws_instance" "webserver" {
-  ami           = data.aws_ami.amazon_centos.image_id
-  instance_type = var.instance_type
+  ami             = data.aws_ami.amazon_centos.image_id
+  instance_type   = var.instance_type
   key_name        = aws_key_pair.terraform_server.key_name
-  tags = local.common_tags
-  
-  # tags = {
-  #   "Name" = "webserver"
-  # }
-
+  vpc_security_group_ids = [aws_security_group.webserver_sg.id]
   root_block_device {
     delete_on_termination = true
   }
-
-  vpc_security_group_ids = [aws_security_group.webserver_sg.id]
+  tags            = merge(
+     local.common_tags,
+     {
+       Name = var.ec2_name
+     }
+  )
 }
 
 

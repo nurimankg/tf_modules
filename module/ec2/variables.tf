@@ -10,6 +10,9 @@ variable "cidr_list" {
   type = list(string)
 }
 
+variable "ec2_name" {
+  
+}
 # variable "cidr" {
 #   type = string
 # }

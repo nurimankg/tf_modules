@@ -5,7 +5,6 @@ locals {
 
 locals {
   common_tags = {
-    Name    = "${var.env}-ec2-dev"
     env     = var.env
     project = "${var.env}-infra"
     team    = "DevOps-01"

@@ -13,3 +13,7 @@ variable "cidr_list" {
 variable "instance_type" {
   type = string
 }
+
+variable "ec2_name" {
+  
+}
