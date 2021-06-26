@@ -7,6 +7,7 @@ module "vpc" {
   source = "github.com/nurimankg/tf_modules/module/vpc"
   cidr   = var.cidr
   env   = var.env
+  vpc_name = var.vpc_name
 }
 
 module "ec2_instance" {
@@ -15,4 +16,5 @@ module "ec2_instance" {
   instance_type   = var.instance_type
   cidr_list       = var.cidr_list
   ec2_name        = var.ec2_name
+  http_port       = var.http_port
 }

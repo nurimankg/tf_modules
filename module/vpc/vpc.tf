@@ -7,7 +7,7 @@ resource "aws_vpc" "main_vpc" {
   tags            = merge(
      local.common_tags,
      {
-       Name = var.ec2_name
+       Name = var.vpc_name
      }
   )
 }
