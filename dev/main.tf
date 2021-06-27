@@ -14,21 +14,11 @@ module "vpc" {
 module "subnets" {
   source = "github.com/nurimankg/tf_modules/module/subnets.tf"
 
-  variable "private_subnet_cidr" {
-  type = list(string)
+  env           = var.env
+  private_subnet_cidr  = var.private_subnet_cidr
+  subnet_az            = var.subnet_az
+  public_subnet_cidr   = var.public_subnet_cidr
 }
-
-variable "public_subnet_cidr" {
-  type = list(string)
-}
-
-variable "subnet_az" {
-  type = list(string)
-
-}
-}
-
-
 module "ec2_instance" {
   source        = "github.com/nurimankg/tf_modules/module/ec2"
   
